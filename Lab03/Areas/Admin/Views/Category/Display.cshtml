@@ -1,0 +1,10 @@
+﻿@model Lab03.Models.Category
+@{
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>@Model.Name</h2>
+
+<div>
+	<h3>Id: @Model.Id</h3>
+</div>
+<a asp-action="Index">Back to List</a>

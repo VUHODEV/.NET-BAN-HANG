@@ -1,0 +1,18 @@
+﻿@model Lab03.Models.Category
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+	ViewData["Title"] = "Edit Category";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edit Category</h2>
+
+<form asp-action="Update" method="post">
+	<input type="hidden" asp-for="Id" />
+	<div class="form-group">
+		<label asp-for="Name"></label>
+		<input asp-for="Name" class="form-control" />
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -1,0 +1,33 @@
+﻿@model Lab03.Models.Product
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Delete Product</h2>
+<p>Are you sure you want to delete @Model.Name?</p>
+<button type="button" class="btn btn-danger" id="deleteBtn">Delete</button>
+<a href="/Admin/Product/Index" class="btn btn-secondary">Cancel</a>
+
+<script>
+    document.getElementById("deleteBtn").addEventListener("click", async function () {
+        try {
+            const id = "@Model.Id";
+            const response = await fetch(`/api/admin/products/${id}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                alert("Product deleted successfully!");
+                window.location.href = "/Admin/Product/Index";
+            } else {
+                const error = await response.json();
+                alert("Error: " + (error.message || "Failed to delete product."));
+            }
+        } catch (err) {
+            console.error(err);
+            alert("An error occurred while deleting the product.");
+        }
+    });
+</script>
+

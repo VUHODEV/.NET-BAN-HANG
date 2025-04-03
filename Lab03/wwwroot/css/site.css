@@ -1,0 +1,325 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* General Styles */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+header .Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .Menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .Menu i {
+  margin-right: 0.5rem;
+}
+
+header .Contain_img svg {
+  max-width: 100%;
+  height: auto;
+}
+
+header .Contact {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .Contact li {
+  margin-left: 1rem;
+}
+
+/* Contact Page Styles */
+.ContactPage {
+  display: none;
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.ContactPage .Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ContactPage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ContactPage ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.ContactPage ul li i {
+  margin-right: 0.5rem;
+}
+
+/* Menu Page Styles */
+.MenuPage {
+  display: none;
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.MenuPage .Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.MenuPage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.MenuPage ul li {
+  margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  padding: 2rem 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+footer .Content {
+  margin-bottom: 1rem;
+}
+
+footer .Content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .Content ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Home Page Styles */
+.Homepage .Section_1 img,
+.Homepage .Section_3 img {
+  width: 100%;
+  height: auto;
+}
+
+.Homepage .Section_2 .Title,
+.Homepage .Section_4 .Title,
+.Homepage .Section_5 .Title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Homepage .Section_2 .Content,
+.Homepage .Section_4 .Content,
+.Homepage .Section_5 .Content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.Homepage .Section_2 .Component,
+.Homepage .Section_4 .Component,
+.Homepage .Section_5 .Component {
+  flex: 1 1 calc(25% - 1rem);
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Homepage .Section_2 .Component:hover,
+.Homepage .Section_4 .Component:hover,
+.Homepage .Section_5 .Component:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Homepage .Section_2 .category-icon,
+.Homepage .Section_4 .Contain_img img,
+.Homepage .Section_5 .Contain_img img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.Homepage .Section_2 .category-name,
+.Homepage .Section_4 .Contain_text span,
+.Homepage .Section_5 .Contain_text span {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Homepage .Section_2 .category-description,
+.Homepage .Section_4 .Contain_text p,
+.Homepage .Section_5 .Contain_text p {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.Homepage .Section_4 .EditDelete {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.Homepage .Section_4 .EditDelete .btn {
+  flex: 1;
+}
+
+.Homepage .Section_4 .btn-lv-edit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.Homepage .Section_4 .btn-lv-delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.Homepage .Section_4 .btn-lv-explore {
+  display: inline-block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Product Page Styles */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table .table {
+  background-color: #fff;
+}
+
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table img {
+  max-width: 100px;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}

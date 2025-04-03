@@ -1,0 +1,46 @@
+﻿@model Lab03.Models.Order
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="text-center">Chi tiết đơn hàng #@Model.Id</h2>
+
+<div class="card shadow-sm p-4">
+    <h4><strong>Khách hàng:</strong> @Model.ApplicationUser</h4>
+    <p><strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+    <p><strong>Tổng tiền:</strong> @Model.TotalPrice.ToString("N0") VND</p>
+</div>
+@if (Model.OrderDetails != null && Model.OrderDetails.Any())
+{
+    <h3 class="mt-4">Danh sách sản phẩm</h3>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderDetails)
+            {
+                <tr>
+                    <td>@(item.Product?.Name ?? "Không có thông tin")</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Price.ToString("N0") VND</td>
+                    <td>@(item.Quantity * item.Price) VND</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="text-muted">Không có sản phẩm nào trong đơn hàng.</p>
+}
+
+
+<a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>

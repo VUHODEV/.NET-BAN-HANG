@@ -1,0 +1,605 @@
+﻿@model IEnumerable<Lab03.Models.Product>
+@{
+    ViewData["Title"] = "Home Page";
+    int numOfQuantity = 1;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+        }
+
+        /* Banner Styles */
+        .banner-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            /* Thêm dòng sau để tăng chất lượng hiển thị */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+
+        .banner-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            /* Điều chỉnh background-size và position */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* Thêm chất lượng hiển thị tốt hơn */
+            image-rendering: high-quality;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+
+            .banner-slide.active {
+                opacity: 1;
+            }
+
+        .banner-content {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            max-width: 50%;
+        }
+
+            .banner-content h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .banner-content p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+        .banner-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+            .banner-btn:hover {
+                background-color: rgba(255, 255, 255, 0.4);
+                transform: scale(1.05);
+            }
+
+        .banner-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .banner-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .banner-indicator.active {
+                background-color: white;
+                transform: scale(1.2);
+            }
+
+        /* Card Styles */
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .price-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+            .price-section span {
+                font-size: 1rem;
+                color: #7f8c8d;
+            }
+
+            .price-section p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #e74c3c;
+                margin: 0 10px;
+            }
+
+        .btn-outline-dark {
+            border: 2px solid #34495e;
+            color: #34495e;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+            .btn-outline-dark:hover {
+                background-color: #34495e;
+                color: #fff;
+                transform: scale(1.05);
+            }
+
+            .btn-outline-dark i {
+                transition: transform 0.3s ease;
+            }
+
+            .btn-outline-dark:hover i {
+                transform: translateX(5px);
+            }
+
+        .welcome-section {
+            padding: 60px 0;
+            background: #fff;
+            border-radius: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .display-4 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #3498db, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .welcome-section p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        .welcome-section a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+            .welcome-section a:hover {
+                color: #e74c3c;
+            }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="banner-container">
+            <div class="banner-slide active" style="background-image: url('/images/Banner/banner1.jpg');">
+                <div class="banner-content">
+                    <h2>Summer Collection</h2>
+                    <p>Discover our new arrivals with up to 30% discount</p>
+                    <button class="banner-btn">Shop Now</button>
+                </div>
+            </div>
+            <div class="banner-slide" style="background-image: url('/images/Banner/banner2.jpg');">
+                <div class="banner-content">
+                    <h2>Limited Edition</h2>
+                    <p>Exclusive products available for a short time only</p>
+                    <button class="banner-btn">View Collection</button>
+                </div>
+            </div>
+            <div class="banner-slide" style="background-image: url('/images/Banner/banner3.jpg');">
+                <div class="banner-content">
+                    <h2>New Arrivals</h2>
+                    <p>Fresh styles just added to our collection</p>
+                    <button class="banner-btn">Explore</button>
+                </div>
+            </div>
+            <div class="banner-indicators">
+                <div class="banner-indicator active" data-slide="0"></div>
+                <div class="banner-indicator" data-slide="1"></div>
+                <div class="banner-indicator" data-slide="2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                @foreach (var item in Model)
+                {
+                    <div class="col mb-5">
+                        <div class="card gap-3">
+                            <div class="product-image-container" style="position: relative;">
+                                <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id">
+                                    <img src="@item.ImgUrl" class="card-img-top product-image" alt="@item.Name">
+                                    <div class="quick-view-overlay">
+                                        <span>Quick View</span>
+                                    </div>
+                                </a>
+                            </div>
+                          <div class="card-body">
+                                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                                <div class="price-section">
+                                    <span>Price:</span>
+                                    <p>@item.Price.ToString("#,##0") Vnđ</p>
+                                </div>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                        <button class="btn btn-outline-dark"><i class="bi-cart-fill me-1"></i>Add to Cart</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .product-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .quick-view-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            opacity: 0;
+        }
+
+        .product-image-container:hover .quick-view-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .product-image-container:hover .product-image {
+            transform: scale(1.05);
+        }
+                .btn-outline-primary {
+            border: 2px solid #3498db;
+            color: #3498db;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #3498db;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .btn-outline-primary i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-outline-primary:hover i {
+            transform: translateX(5px);
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Xử lý click vào ảnh sản phẩm
+            const productImages = document.querySelectorAll('.product-image');
+            productImages.forEach(img => {
+                img.addEventListener('click', function(e) {
+                    // Ngăn chặn sự kiện nếu click vào nút Add to Cart
+                    if (e.target.closest('button')) return;
+
+                    const productId = this.getAttribute('data-product-id');
+                    if (productId) {
+                        window.location.href = `/Products/Display/${productId}`;
+                    }
+                });
+            });
+
+            // Thêm hiệu ứng hover
+            const productContainers = document.querySelectorAll('.product-image-container');
+            productContainers.forEach(container => {
+                container.addEventListener('mouseenter', function() {
+                    this.querySelector('.product-image').style.opacity = '0.9';
+                });
+                container.addEventListener('mouseleave', function() {
+                    this.querySelector('.product-image').style.opacity = '1';
+                });
+            });
+        });
+                document.addEventListener('DOMContentLoaded', function() {
+            // Xử lý click vào ảnh sản phẩm
+            const productImages = document.querySelectorAll('.product-image');
+            productImages.forEach(img => {
+                img.addEventListener('click', function(e) {
+                    // Ngăn chặn sự kiện nếu click vào nút Add to Cart
+                    if (e.target.closest('button')) return;
+
+                    const productId = this.getAttribute('data-product-id');
+                    if (productId) {
+                        window.location.href = `/Products/Display/${productId}`;
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Banner Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.banner-slide');
+            const indicators = document.querySelectorAll('.banner-indicator');
+            let currentSlide = 0;
+            const slideCount = slides.length;
+
+            // Function to show a specific slide
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+
+            // Auto-advance slides every 5 seconds
+            function autoAdvance() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                showSlide(currentSlide);
+            }
+
+            let slideInterval = setInterval(autoAdvance, 5000);
+
+            // Add click event to indicators
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', function() {
+                    const slideIndex = parseInt(this.getAttribute('data-slide'));
+                    showSlide(slideIndex);
+                    // Reset the auto-advance timer
+                    clearInterval(slideInterval);
+                    slideInterval = setInterval(autoAdvance, 5000);
+                });
+            });
+
+            // Pause auto-advance when hovering over banner
+            const bannerContainer = document.querySelector('.banner-container');
+            bannerContainer.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+
+            bannerContainer.addEventListener('mouseleave', () => {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(autoAdvance, 5000);     
+            });
+
+            // Card hover effects
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.background = 'linear-gradient(135deg, #fefefe, #f5f7fa)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.background = '#fff';
+                });
+            });
+        });
+    </script>
+    <!-- Thêm vào trước thẻ đóng </body> -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Giới thiệu website -->
+                <div class="col-md-4 mb-4">
+                    <h3>XIP THE KING</h3>
+                    <p>Chúng tôi cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Cam kết mang đến trải nghiệm mua sắm tốt nhất cho khách hàng.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Thông tin liên hệ -->
+                <div class="col-md-4 mb-4">
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i> 0901 234 567</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> info@xiptheking.com</li>
+                        <li><i class="bi bi-clock-fill me-2"></i> Mở cửa: 8:00 - 22:00 hàng ngày</li>
+                    </ul>
+                </div>
+
+                <!-- Liên kết nhanh -->
+                <div class="col-md-4 mb-4">
+                    <h3>LIÊN KẾT NHANH</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <style>
+        .footer-section {
+            position: relative;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            left: 0;
+            right: 0;
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 0;
+            margin-top: 80px;
+        }
+
+            .footer-section .container {
+                max-width: 1140px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+
+            .footer-section h3 {
+                color: #3498db;
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+            }
+
+            .footer-section a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+                .footer-section a:hover {
+                    color: #3498db;
+                }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+            .social-icons a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgba(255,255,255,0.1);
+                transition: all 0.3s ease;
+            }
+
+                .social-icons a:hover {
+                    background-color: #3498db;
+                    transform: translateY(-3px);
+                }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+
+    <!-- Thêm vào phần JavaScript -->
+    <script>
+        // Hiệu ứng khi cuộn đến footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const footer = document.querySelector('.footer-section');
+
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                const footerPosition = footer.offsetTop;
+                const windowHeight = window.innerHeight;
+
+                if (scrollPosition + windowHeight > footerPosition + 100) {
+                    footer.style.opacity = '1';
+                    footer.style.transform = 'translateY(0)';
+                }
+            });
+
+            // Khởi tạo trạng thái ban đầu
+            footer.style.opacity = '0';
+            footer.style.transform = 'translateY(50px)';
+            footer.style.transition = 'all 0.5s ease-out';
+
+            // Kích hoạt hiệu ứng ngay nếu footer đã hiển thị
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                footer.style.opacity = '1';
+                footer.style.transform = 'translateY(0)';
+            }
+        });
+    </script>
+</body>
+</html>

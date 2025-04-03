@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Migrations\\20250331033055_Initial666.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab03\\Migrations\\20250331033055_Initial666.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\controllers\\orderhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\controllers\\orderhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\models\\orderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\models\\orderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\views\\shoppingcart\\orderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\views\\shoppingcart\\orderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\apicontroller\\categoryapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\apicontroller\\categoryapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\apicontroller\\orderapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\apicontroller\\orderapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\apicontroller\\productapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\apicontroller\\productapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|c:\\users\\admin\\documents\\zalo received files\\lab03\\lab03\\lab03\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13BFD54E-79E4-43CA-B285-99CF2E581645}|Lab03\\Lab03.csproj|solutionrelative:lab03\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 327,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Lab03\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T03:33:00.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250331033055_Initial666.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Migrations\\20250331033055_Initial666.cs",
+              "RelativeDocumentMoniker": "Lab03\\Migrations\\20250331033055_Initial666.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Migrations\\20250331033055_Initial666.cs",
+              "RelativeToolTip": "Lab03\\Migrations\\20250331033055_Initial666.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:30:56.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderHistory.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\OrderHistory.cs",
+              "RelativeDocumentMoniker": "Lab03\\Models\\OrderHistory.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\OrderHistory.cs",
+              "RelativeToolTip": "Lab03\\Models\\OrderHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:25:30.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\DataAccess\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Lab03\\DataAccess\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\DataAccess\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Lab03\\DataAccess\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:24:22.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderHistoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Controllers\\OrderHistoryController.cs",
+              "RelativeDocumentMoniker": "Lab03\\Controllers\\OrderHistoryController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Controllers\\OrderHistoryController.cs",
+              "RelativeToolTip": "Lab03\\Controllers\\OrderHistoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:19:55.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderHistory.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\OrderHistory.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Views\\ShoppingCart\\OrderHistory.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\OrderHistory.cshtml",
+              "RelativeToolTip": "Lab03\\Views\\ShoppingCart\\OrderHistory.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T03:14:00.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Lab03\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Lab03\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:55:21.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Lab03\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\Order.cs",
+              "RelativeToolTip": "Lab03\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:51:49.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Lab03\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "Lab03\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:51:48.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T02:52:57.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "Lab03\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T02:52:07.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderCompleted.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "RelativeToolTip": "Lab03\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T02:52:00.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T02:52:57.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "Lab03\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T02:52:06.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T02:52:59.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Lab03\\Models\\ShoppingCart.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Models\\ShoppingCart.cs",
+              "RelativeToolTip": "Lab03\\Models\\ShoppingCart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:51:46.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryApiController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\ApiController\\CategoryApiController.cs",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\ApiController\\CategoryApiController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\ApiController\\CategoryApiController.cs",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\ApiController\\CategoryApiController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwFIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:31:23.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderApiController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\ApiController\\OrderApiController.cs",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\ApiController\\OrderApiController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\ApiController\\OrderApiController.cs",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\ApiController\\OrderApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:31:22.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductApiController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\ApiController\\ProductApiController.cs",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\ApiController\\ProductApiController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\ApiController\\ProductApiController.cs",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\ApiController\\ProductApiController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAQwH0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:30:54.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T18:02:10.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvxQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T18:02:08.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Lab03\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Lab03\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAQwL4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T18:01:18.448Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 204,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

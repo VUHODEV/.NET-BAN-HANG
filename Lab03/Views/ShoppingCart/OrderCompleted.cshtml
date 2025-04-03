@@ -1,0 +1,119 @@
+﻿@model int
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Completed - Lab03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #3498db, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .order-id {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #e74c3c;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #fefefe, #f5f7fa);
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+            .order-id:hover {
+                transform: scale(1.05);
+            }
+
+        .highlight {
+            background: linear-gradient(135deg, #fefefe, #f5f7fa);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px-dot rgba(0, 0, 0, 0.05);
+            margin: 20px 0;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 1.1rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 2px solid #3498db;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+            a:hover {
+                background-color: #3498db;
+                color: #fff;
+                transform: scale(1.05);
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Order Completed</h2>
+        <p>Congratulations! Your order has been successfully placed. We’re thrilled to have you as a customer and can’t wait for you to enjoy your purchase.</p>
+        <div class="order-id">Order ID: @Model</div>
+        <div class="highlight">
+            <p><strong>What’s next?</strong> You’ll receive a confirmation email soon with all the details. Your items will be carefully prepared and shipped to you as quickly as possible. Sit back, relax, and get ready to experience something amazing!</p>
+        </div>
+        <p>If you have any questions or need assistance, feel free to contact our support team at <a href="mailto:support@lab03.com">support@lab03.com</a>. We’re here to help!</p>
+        <a asp-controller="Home" asp-action="Index">Continue Shopping</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const orderId = document.querySelector('.order-id');
+            orderId.addEventListener('mouseenter', () => {
+                orderId.style.background = 'linear-gradient(135deg, #fff, #f5f7fa)';
+                orderId.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.1)';
+            });
+            orderId.addEventListener('mouseleave', () => {
+                orderId.style.background = 'linear-gradient(135deg, #fefefe, #f5f7fa)';
+                orderId.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.05)';
+            });
+        });
+    </script>
+</body>
+</html>

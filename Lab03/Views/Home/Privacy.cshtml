@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Chính sách bảo mật";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - XIP THE KING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(to right, #000000, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+            ul li {
+                font-size: 1.1rem;
+                color: #555;
+                margin-bottom: 15px;
+                position: relative;
+                padding-left: 25px;
+            }
+
+                ul li:before {
+                    content: "\f135";
+                    font-family: 'bootstrap-icons';
+                    color: #d4af37;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    font-weight: bold;
+                }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            border-bottom: 2px solid #d4af37;
+        }
+
+            a:hover {
+                color: #d4af37;
+            }
+
+        .highlight {
+            background: linear-gradient(135deg, #f8f8f8, #fff9e6);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #d4af37;
+            transition: all 0.3s ease;
+        }
+
+        .vip-badge {
+            display: inline-block;
+            background: linear-gradient(to right, #000000, #d4af37);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHÍNH SÁCH BẢO MẬT <span class="vip-badge">VIP PRO</span></h1>
+
+        <p>Chào mừng bạn đến với chính sách bảo mật của <strong>XIP THE KING</strong> - Thương hiệu quần nam nữ đẳng cấp VIP hàng đầu Việt Nam. Chúng tôi cam kết bảo vệ thông tin cá nhân của khách hàng với tiêu chuẩn cao nhất.</p>
+
+        <h2>1. Thông tin chúng tôi thu thập</h2>
+        <p>Để phục vụ khách hàng VIP của XIP THE KING tốt nhất, chúng tôi có thể thu thập:</p>
+        <ul>
+            <li><strong>Thông tin cá nhân</strong>: Tên, địa chỉ, số điện thoại khi bạn đặt hàng sản phẩm cao cấp của chúng tôi</li>
+            <li><strong>Thông tin giao dịch</strong>: Lịch sử mua hàng các sản phẩm quần VIP</li>
+            <li><strong>Dữ liệu truy cập</strong>: Thông tin về cách bạn tương tác với website thời trang của chúng tôi</li>
+        </ul>
+
+        <div class="highlight">
+            <p><strong>CAM KẾT VIP:</strong> Mọi thông tin của khách hàng XIP THE KING đều được mã hóa và bảo mật tuyệt đối theo tiêu chuẩn quốc tế. Chúng tôi không bao giờ chia sẻ thông tin với bên thứ ba.</p>
+        </div>
+
+        <h2>2. Mục đích sử dụng thông tin</h2>
+        <p>Thông tin của bạn giúp chúng tôi:</p>
+        <ul>
+            <li>Hoàn thiện quy trình đặt hàng các sản phẩm quần cao cấp</li>
+            <li>Cung cấp dịch vụ chăm sóc khách hàng VIP 24/7</li>
+            <li>Gửi thông tin về các bộ sưu tập mới nhất và chương trình ưu đãi đặc biệt</li>
+        </ul>
+
+        <h2>3. Bảo mật thông tin</h2>
+        <p>Hệ thống bảo mật đa lớp của XIP THE KING bao gồm:</p>
+        <ul>
+            <li>Mã hóa SSL 256-bit cho mọi giao dịch</li>
+            <li>Hệ thống firewall chuyên nghiệp</li>
+            <li>Quy trình xử lý thông tin theo tiêu chuẩn PCI DSS</li>
+        </ul>
+
+        <h2>4. Quyền lợi khách hàng VIP</h2>
+        <p>Là khách hàng của XIP THE KING, bạn có quyền:</p>
+        <ul>
+            <li>Yêu cầu truy cập hoặc chỉnh sửa thông tin cá nhân</li>
+            <li>Hủy đăng ký nhận thông tin khuyến mãi bất cứ lúc nào</li>
+            <li>Yêu cầu xóa hoàn toàn dữ liệu cá nhân khỏi hệ thống</li>
+        </ul>
+
+        <h2>5. Liên hệ</h2>
+        <p>Đội ngũ chăm sóc khách hàng VIP của chúng tôi luôn sẵn sàng hỗ trợ:</p>
+        <ul>
+            <li>Hotline: <a href="tel:1900 6868">1900 6868</a> (24/7)</li>
+            <li>Email: <a href="mailto:VIPcare@xiptheking.com">VIPcare@xiptheking.com</a></li>
+            <li>Showroom: CAMPUCHIA TAM THÁI TỬ</li>
+        </ul>
+
+        <p style="text-align: center; margin-top: 50px; font-style: italic;">"XIP THE KING - Nâng tầm phong cách đẳng cấp VIP"</p>
+        <p style="text-align: right; font-size: 0.9rem;">Cập nhật lần cuối: 30/03/2025</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hiệu ứng cho highlight box
+            const highlight = document.querySelector('.highlight');
+            
+                highlight.addEventListener('mouseleave', () => {
+                    highlight.style.transform = 'translateY(0)';
+                    highlight.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.05)';
+                });
+            }
+
+            // Hiệu ứng cho các mục VIP
+            document.querySelectorAll('li').forEach(item => {
+                item.addEventListener('mouseover', () => {
+                    item.style.transform = 'translateX(5px)';
+                });
+                item.addEventListener('mouseout', () => {
+                    item.style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

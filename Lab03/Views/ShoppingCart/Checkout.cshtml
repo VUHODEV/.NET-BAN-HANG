@@ -1,0 +1,185 @@
+﻿@model Order
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Lab03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-align: center;
+            background: linear-gradient(to right, #3498db, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+            .form-group label {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #2c3e50;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+        .form-control {
+            font-size: 1.1rem;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+            color: #7f8c8d;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .form-control:focus {
+                border-color: #3498db;
+                box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+                outline: none;
+                background: #fff;
+            }
+
+            .form-control.is-invalid {
+                border-color: #e74c3c;
+            }
+
+        .validation-message {
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #3498db;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+
+            .btn-primary:hover {
+                background-color: #e74c3c;
+                transform: scale(1.05);
+            }
+
+        .btn-secondary {
+            display: block;
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            background-color: #f5f7fa;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+            .btn-secondary:hover {
+                background-color: #e0e6ed;
+                transform: scale(1.02);
+                color: #2c3e50;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form asp-action="Checkout" method="post" id="checkoutForm">
+            <div class="form-group">
+                <label asp-for="ShippingAddress">Shipping Address *</label>
+                <input asp-for="ShippingAddress" class="form-control" placeholder="Enter your shipping address" required />
+                <span asp-validation-for="ShippingAddress" class="validation-message"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notes">Notes</label>
+                <textarea asp-for="Notes" class="form-control" placeholder="Any special instructions?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Place Order</button>
+            <a href="/" class="btn-secondary">Cancel and Return Home</a>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('checkoutForm');
+            const shippingAddressInput = document.querySelector('input[name="ShippingAddress"]');
+            const validationMessage = document.querySelector('.validation-message');
+
+            // Validate form on submit
+            form.addEventListener('submit', (e) => {
+                if (!shippingAddressInput.value.trim()) {
+                    e.preventDefault();
+                    shippingAddressInput.classList.add('is-invalid');
+                    validationMessage.style.display = 'block';
+                    validationMessage.textContent = 'Shipping address is required';
+
+                    // Shake animation for invalid field
+                    shippingAddressInput.style.animation = 'shake 0.5s';
+                    setTimeout(() => {
+                        shippingAddressInput.style.animation = '';
+                    }, 500);
+                }
+            });
+
+            // Remove invalid state when user starts typing
+            shippingAddressInput.addEventListener('input', () => {
+                if (shippingAddressInput.value.trim()) {
+                    shippingAddressInput.classList.remove('is-invalid');
+                    validationMessage.style.display = 'none';
+                }
+            });
+
+          
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>

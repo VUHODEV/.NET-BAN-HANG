@@ -1,0 +1,23 @@
+﻿@model Lab03.Models.Order
+
+@{
+    ViewData["Title"] = "Xóa đơn hàng";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="text-center text-danger">Xác nhận xóa đơn hàng</h2>
+
+<div class="card shadow-sm p-4">
+    <h4><strong>Khách hàng:</strong> @Model.ApplicationUser</h4>
+    <p><strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+    <p><strong>Tổng tiền:</strong> @Model.TotalPrice.ToString("N0") VND</p>
+
+</div>
+
+<h3 class="mt-4 text-danger">Bạn có chắc chắn muốn xóa đơn hàng này không?</h3>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

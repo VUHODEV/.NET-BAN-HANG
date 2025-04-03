@@ -1,0 +1,389 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Lab03.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Lab03.ij2ghiu7cq.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\06_01.png",
+      "PackagePath": "staticwebassets\\Image\\06_01.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\0c7c2a44959537c9f8987f4d96a077021483255984-1301546244-4d940504-620x348.jpg",
+      "PackagePath": "staticwebassets\\Image\\0c7c2a44959537c9f8987f4d96a077021483255984-1301546244-4d940504-620x348.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\1.4.jpg",
+      "PackagePath": "staticwebassets\\Image\\1.4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\3emdcw2lh7451.png",
+      "PackagePath": "staticwebassets\\Image\\3emdcw2lh7451.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\6818eb09-9402-4730-8d1f-b240e8469403.png",
+      "PackagePath": "staticwebassets\\Image\\6818eb09-9402-4730-8d1f-b240e8469403.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\9759d9c6-9005-4f58-a95e-266c74458344.jpg",
+      "PackagePath": "staticwebassets\\Image\\9759d9c6-9005-4f58-a95e-266c74458344.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\Cray1_Feathered.jpg",
+      "PackagePath": "staticwebassets\\Image\\Cray1_Feathered.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\banner1.jpg",
+      "PackagePath": "staticwebassets\\Image\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\banner2.jpg",
+      "PackagePath": "staticwebassets\\Image\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\banner3.jpg",
+      "PackagePath": "staticwebassets\\Image\\banner3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\bmtt-nc-hutech-2280603726-lab05.zip",
+      "PackagePath": "staticwebassets\\Image\\bmtt-nc-hutech-2280603726-lab05.zip"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\dell-8.webp",
+      "PackagePath": "staticwebassets\\Image\\dell-8.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\ea6d6187-8f80-40ec-82f7-76b9f2279a7d.jpg",
+      "PackagePath": "staticwebassets\\Image\\ea6d6187-8f80-40ec-82f7-76b9f2279a7d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\louis-vuitton-diane--M14214_PM1_Side view - Sao chép.webp",
+      "PackagePath": "staticwebassets\\Image\\louis-vuitton-diane--M14214_PM1_Side view - Sao chép.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\louis-vuitton-lv-iconic-earrings--M02380_PM1_Worn view.webp",
+      "PackagePath": "staticwebassets\\Image\\louis-vuitton-lv-iconic-earrings--M02380_PM1_Worn view.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\louis-vuitton-trunkie--M14526_PM1_Interior view.avif",
+      "PackagePath": "staticwebassets\\Image\\louis-vuitton-trunkie--M14526_PM1_Interior view.avif"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống.jpg",
+      "PackagePath": "staticwebassets\\Image\\tải xuống.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống.webp",
+      "PackagePath": "staticwebassets\\Image\\tải xuống.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống1.webp",
+      "PackagePath": "staticwebassets\\Image\\tải xuống1.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống2.webp",
+      "PackagePath": "staticwebassets\\Image\\tải xuống2.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống4.webp",
+      "PackagePath": "staticwebassets\\Image\\tải xuống4.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống6.webp",
+      "PackagePath": "staticwebassets\\Image\\tải xuống6.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\tải xuống7.webp",
+      "PackagePath": "staticwebassets\\Image\\tải xuống7.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\Image\\zalo_last_screenshot.png",
+      "PackagePath": "staticwebassets\\Image\\zalo_last_screenshot.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\css\\Client\\styles.css",
+      "PackagePath": "staticwebassets\\css\\Client\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\images\\Banner\\banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\Banner\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\images\\Banner\\banner2.jpg",
+      "PackagePath": "staticwebassets\\images\\Banner\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\images\\Banner\\banner3.jpg",
+      "PackagePath": "staticwebassets\\images\\Banner\\banner3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\images\\categories\\bags.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\bags.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Zalo Received Files\\Lab03\\Lab03\\Lab03\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lab03.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lab03.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Lab03.props",
+      "PackagePath": "build\\Lab03.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab03.props",
+      "PackagePath": "buildMultiTargeting\\Lab03.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Lab03.props",
+      "PackagePath": "buildTransitive\\Lab03.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,130 @@
+﻿@model Lab03.Models.Product
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Add Product";
+}
+
+<!-- Thêm các thư viện CSS cần thiết -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+<h2>Add Product</h2>
+
+<form id="addProductForm" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="CategoryId" class="form-label">Category</label>
+        <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories">
+            <option value="">-- Select Category --</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="ImgUrl" class="form-label">Product Image</label>
+        <input type="file" name="imgUrl" class="form-control" required />
+        <small class="text-muted">Please upload product image (required)</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submitBtn">
+        <i class="fas fa-plus-circle me-2"></i>Add Product
+    </button>
+</form>
+
+@section Scripts {
+    <!-- jQuery Core -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@4.0.0/dist/jquery.validate.unobtrusive.min.js"></script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toastr for notifications -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Custom AJAX Script -->
+    <script>
+        $(document).ready(function() {
+            // Initialize Toastr
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "timeOut": "5000"
+            };
+
+            $('#addProductForm').submit(function(e) {
+                e.preventDefault();
+
+                var $form = $(this);
+                var $submitBtn = $('#submitBtn');
+
+                // Show loading state
+                $submitBtn.prop('disabled', true);
+                $submitBtn.html('<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Adding...');
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    url: $form.attr('action') || '@Url.Action("Add", "Product")',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if (response.success) {
+                            toastr.success(response.message);
+                            if (response.redirect) {
+                                setTimeout(function() {
+                                    window.location.href = response.redirect;
+                                }, 1500);
+                            }
+                        } else {
+                            toastr.error(response.message);
+                            if (response.errors) {
+                                $.each(response.errors, function(key, value) {
+                                    toastr.error(value);
+                                });
+                            }
+                        }
+                    },
+                    error: function(xhr) {
+                        toastr.error('Error: ' + xhr.responseText);
+                    },
+                    complete: function() {
+                        $submitBtn.prop('disabled', false);
+                        $submitBtn.html('<i class="fas fa-plus-circle me-2"></i>Add Product');
+                    }
+                });
+            });
+        });
+    </script>
+}

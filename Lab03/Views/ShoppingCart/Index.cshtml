@@ -1,0 +1,167 @@
+@model ShoppingCart
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Lab03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-align: center;
+            background: linear-gradient(to right, #3498db, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+            .table th {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #2c3e50;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 15px;
+                background: linear-gradient(135deg, #fefefe, #f5f7fa);
+                border: none;
+            }
+
+            .table tr {
+                background: #fff;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+                .table tr:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                }
+
+            .table td {
+                padding: 20px;
+                vertical-align: middle;
+                font-size: 1.1rem;
+                color: #7f8c8d;
+                border: none;
+            }
+
+                .table td a {
+                    color: #e74c3c;
+                    text-decoration: none;
+                    font-weight: 500;
+                    padding: 8px 15px;
+                    border: 2px solid #e74c3c;
+                    border-radius: 25px;
+                    transition: all 0.3s ease;
+                }
+
+                    .table td a:hover {
+                        background-color: #e74c3c;
+                        color: #fff;
+                        transform: scale(1.05);
+                    }
+
+        .btn-checkout {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #28a745;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+            .btn-checkout:hover {
+                background-color: #218838;
+                transform: scale(1.05);
+                color: #fff;
+            }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Cart</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price.ToString("#,##0") Vnđ</td>
+                        <td>@(item.Price * item.Quantity) Vnđ</td>
+                        <td>
+                            <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId">Remove</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="text-center">
+            <a asp-action="Checkout" class="btn-checkout">Tới trang thanh toán</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rows = document.querySelectorAll('.table tbody tr');
+            rows.forEach(row => {
+                row.addEventListener('mouseenter', () => {
+                    row.style.background = 'linear-gradient(135deg, #fefefe, #f5f7fa)';
+                });
+                row.addEventListener('mouseleave', () => {
+                    row.style.background = '#fff';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Lab03.Models.Product>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Product List";
+}
+
+<h2>Product List</h2>
+
+<a asp-action="Add" class="btn btn-primary mb-3">Add Product</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Description</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(product.ImgUrl))
+                    {
+                        <img src="@product.ImgUrl" alt="Product Image" style="max-width: 100px;"/>
+                    }
+                </td>
+                <td>@product.Category?.Name</td>
+                <td>
+                    <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-info btn-sm">View</a>
+                    <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

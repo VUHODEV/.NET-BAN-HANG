@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Lab03.Models.Category>
+@{
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Category</h2>
+
+<div>
+	<a asp-action="Add" class="btn btn-primary">Create New</a>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var category in Model)
+		{
+			<tr>
+				<td>@category.Name</td>
+				<td>
+					<a asp-action="Display" asp-route-id="@category.Id">View</a> |
+					<a asp-action="Update" asp-route-id="@category.Id">Edit</a> |
+					<a asp-action="Delete" asp-route-id="@category.Id">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+

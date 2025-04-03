@@ -1,0 +1,678 @@
+﻿@model Lab03.Models.Product
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Name - XIP THE KING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #e74c3c;
+            --dark: #2c3e50;
+            --light: #f5f7fa;
+            --gray: #7f8c8d;
+            --success: #2ecc71;
+        }
+
+        body {
+            font-family: 'Poppins', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-align: center;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+            h2::after {
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 4px;
+                background: linear-gradient(to right, var(--primary), var(--secondary));
+                border-radius: 2px;
+            }
+
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .product-gallery {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            cursor: zoom-in;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+            .thumbnail:hover, .thumbnail.active {
+                border-color: var(--primary);
+                transform: translateY(-5px);
+            }
+
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .current-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .original-price {
+            font-size: 1.5rem;
+            color: var(--gray);
+            text-decoration: line-through;
+        }
+
+        .discount-badge {
+            background-color: var(--secondary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .product-meta {
+            margin-bottom: 30px;
+        }
+
+        .meta-item {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .meta-label {
+            font-weight: 600;
+            color: var(--dark);
+            min-width: 150px;
+            font-size: 1.1rem;
+        }
+
+        .meta-value {
+            font-size: 1.1rem;
+            color: var(--gray);
+            flex: 1;
+        }
+
+        .stock-status {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: var(--success);
+            color: white;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .action-section {
+            margin-top: 40px;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            width: fit-content;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .quantity-btn {
+            width: 45px;
+            height: 45px;
+            background: #f8f9fa;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .quantity-btn:hover {
+                background: #e9ecef;
+            }
+
+        .quantity-input {
+            width: 60px;
+            height: 45px;
+            text-align: center;
+            border: none;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            flex: 1;
+        }
+
+            .btn-primary:hover {
+                background-color: #c0392b;
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            flex: 1;
+        }
+
+            .btn-outline:hover {
+                background-color: var(--primary);
+                color: white;
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+            }
+
+        .wishlist-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .wishlist-btn:hover {
+                background-color: #e9ecef;
+                transform: translateY(-3px);
+            }
+
+            .wishlist-btn.active {
+                color: var(--secondary);
+            }
+
+        .toast-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--success);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .toast-notification.show {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+        .zoom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+            .zoom-overlay.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        .zoomed-image {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+            .zoomed-image.active {
+                transform: scale(1);
+            }
+
+        .close-zoom {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.2);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+            .close-zoom:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: rotate(90deg);
+            }
+
+        .product-tabs {
+            margin-top: 60px;
+        }
+
+        .nav-tabs {
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link {
+            color: var(--dark);
+            font-weight: 600;
+            border: none;
+            padding: 15px 25px;
+            position: relative;
+        }
+
+            .nav-link.active {
+                color: var(--primary);
+            }
+
+                .nav-link.active::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--primary);
+                }
+
+        .tab-content {
+            padding: 30px 0;
+        }
+
+        .related-products {
+            margin-top: 60px;
+        }
+
+        .related-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+            .related-title::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 3px;
+                background: linear-gradient(to right, var(--primary), var(--secondary));
+                border-radius: 3px;
+            }
+
+        @@media (max-width: 992px) {
+            .product-details {
+                flex-direction: column;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @@media (max-width: 576px) {
+            .container {
+                margin: 30px auto;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .current-price {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@Model.Name</h2>
+
+        <div class="product-details">
+            <div class="product-gallery">
+                <img src="@Model.ImgUrl" alt="@Model.Name" class="main-image" id="mainImage">
+
+                <div class="thumbnail-container">
+                    <!-- Thumbnail images would go here -->
+                    <img src="@Model.ImgUrl" class="thumbnail active">
+                    <!-- Add more thumbnails if available -->
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="price-container">
+                    <div class="current-price">@Model.Price.ToString("#,##0") VNĐ</div>
+                    <!-- Original price and discount would go here -->
+                    <!-- <div class="original-price">1,500,000 VNĐ</div> -->
+                    <!-- <div class="discount-badge">-20%</div> -->
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Mô tả:</span>
+                        <span class="meta-value">@Model.Description</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Danh mục:</span>
+                        <span class="meta-value">@Model.Category?.Name</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tình trạng:</span>
+                        <span class="meta-value"><span class="stock-status">Còn hàng</span></span>
+                    </div>
+                    <!-- Add more meta items as needed -->
+                </div>
+
+                <div class="action-section">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decreaseQty">-</button>
+                        <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="10">
+                        <button class="quantity-btn" id="increaseQty">+</button>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a asp-controller="ShoppingCart" asp-action="AddToCart"
+                           asp-route-productId="@Model.Id"
+                           asp-route-quantity="1"
+                           class="btn btn-primary" id="addToCartBtn">
+                            <i class="bi bi-cart-plus"></i> Thêm vào giỏ hàng
+                        </a>
+                        <a asp-action="Index" class="btn btn-outline">
+                            <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm
+                        </a>
+                        <button class="wishlist-btn" id="wishlistBtn">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product tabs (description, reviews, etc.) -->
+        <div class="product-tabs">
+            <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Mô tả sản phẩm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab">Thông số kỹ thuật</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Đánh giá</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="productTabsContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel">
+                    <p>@Model.Description</p>
+                    <!-- Add more detailed description if available -->
+                </div>
+                <div class="tab-pane fade" id="specs" role="tabpanel">
+                    <p>Thông số kỹ thuật chi tiết sẽ được cập nhật sau.</p>
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel">
+                    <p>Chưa có đánh giá nào cho sản phẩm này.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related products section -->
+        <div class="related-products">
+            <h3 class="related-title">Sản phẩm liên quan</h3>
+            <!-- Related products would be displayed here -->
+            <div class="alert alert-info">
+                Hiện chưa có sản phẩm liên quan được hiển thị.
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="bi bi-check-circle-fill"></i>
+        <span id="toastMessage">Đã thêm sản phẩm vào giỏ hàng!</span>
+    </div>
+
+    <!-- Image zoom overlay -->
+    <div class="zoom-overlay" id="zoomOverlay">
+        <span class="close-zoom">&times;</span>
+        <img src="@Model.ImgUrl" class="zoomed-image" id="zoomedImage">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Quantity selector
+            const quantityInput = document.getElementById('quantity');
+            const decreaseBtn = document.getElementById('decreaseQty');
+            const increaseBtn = document.getElementById('increaseQty');
+            const addToCartBtn = document.getElementById('addToCartBtn');
+            const toastNotification = document.getElementById('toastNotification');
+            const toastMessage = document.getElementById('toastMessage');
+            const wishlistBtn = document.getElementById('wishlistBtn');
+            const mainImage = document.getElementById('mainImage');
+            const zoomOverlay = document.getElementById('zoomOverlay');
+            const zoomedImage = document.getElementById('zoomedImage');
+            const closeZoom = document.querySelector('.close-zoom');
+
+            // Quantity controls
+            decreaseBtn.addEventListener('click', () => {
+                let value = parseInt(quantityInput.value);
+                if (value > 1) {
+                    quantityInput.value = value - 1;
+                }
+            });
+
+            increaseBtn.addEventListener('click', () => {
+                let value = parseInt(quantityInput.value);
+                if (value < 10) {
+                    quantityInput.value = value + 1;
+                }
+            });
+
+            // Validate quantity input
+            quantityInput.addEventListener('change', () => {
+                let value = parseInt(quantityInput.value);
+                if (isNaN(value)) value = 1;
+                if (value < 1) value = 1;
+                if (value > 10) value = 10;
+                quantityInput.value = value;
+            });
+
+            // Add to cart button click
+            if (addToCartBtn) {
+                addToCartBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const quantity = quantityInput.value;
+                    const url = this.href + '&quantity=' + quantity;
+
+                    // Show toast notification
+                    toastMessage.textContent = 'Đã thêm sản phẩm vào giỏ hàng!';
+                    toastNotification.classList.add('show');
+
+                    // Hide after 3 seconds
+                    setTimeout(() => {
+                        toastNotification.classList.remove('show');
+                    }, 3000);
+
+                    // Redirect to cart page after delay
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 1000);
+                });
+            }
+
+            // Wishlist button
+            wishlistBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const isActive = this.classList.contains('active');
+
+                if (isActive) {
+                    toastMessage.textContent = 'Đã thêm vào danh sách yêu thích!';
+                } else {
+                    toastMessage.textContent = 'Đã xóa khỏi danh sách yêu thích!';
+                }
+
+                toastNotification.classList.add('show');
+                setTimeout(() => {
+                    toastNotification.classList.remove('show');
+                }, 3000);
+            });
+
+            // Image zoom functionality
+            mainImage.addEventListener('click', function() {
+                zoomOverlay.classList.add('active');
+                setTimeout(() => {
+                    zoomedImage.classList.add('active');
+                }, 50);
+            });
+
+            closeZoom.addEventListener('click', function() {
+                zoomedImage.classList.remove('active');
+                setTimeout(() => {
+                    zoomOverlay.classList.remove('active');
+                }, 300);
+            });
+
+            // Close zoom when clicking outside image
+            zoomOverlay.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    zoomedImage.classList.remove('active');
+                    setTimeout(() => {
+                        zoomOverlay.classList.remove('active');
+                    }, 300);
+                }
+            });
+
+            // Initialize Bootstrap tabs
+            const tabElms = document.querySelectorAll('button[data-bs-toggle="tab"]');
+            tabElms.forEach(tabEl => {
+                tabEl.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tab = new bootstrap.Tab(this);
+                    tab.show();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

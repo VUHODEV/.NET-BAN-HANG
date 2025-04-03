@@ -1,0 +1,381 @@
+/* Hero Section */
+.hero-section {
+  height: 80vh;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Categories */
+.categories {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.category-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover img {
+  transform: scale(1.05);
+}
+
+.category-item h3 {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.view-category {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.featured-products h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.product-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.product-card p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.product-card .price {
+  display: block;
+  font-size: 1.1rem;
+  color: #000;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.view-product {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
+
+/* Banner Slider */
+.banner-slider {
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.banner-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.banner-item:hover img {
+  transform: scale(1.05);
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.banner-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Collections */
+.collections {
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+}
+
+.collections h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.collection-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collection-item:hover img {
+  transform: scale(1.05);
+}
+
+.collection-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+}
+
+.collection-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 5rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
